@@ -1,0 +1,127 @@
+.sports-page {
+  padding: 40px;
+  margin: 100px auto;
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  font-family: 'League Spartan', 'Poppins', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  border-radius: 15px;
+}
+
+h1 {
+  text-align: center;
+  color: #420212;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.category-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #420212;
+}
+
+.category-title {
+  text-align: center;
+  color: #420212;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sports-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.sport-item {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  border-bottom: 3px solid transparent;
+}
+
+.sport-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(66, 2, 18, 0.2);
+  border-bottom: 3px solid #f3a93e;
+}
+
+.sport-name {
+  font-weight: bold;
+  color: #420212;
+  font-size: 1.25rem;
+}
+
+.sport-fee {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.sport-fee div {
+  color: #f3a93e;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .sports-page {
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .category-title {
+    font-size: 1.5rem;
+  }
+
+  .sports-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .sport-item {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-title {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.original-fee {
+  text-decoration: line-through;
+  color: red;
+}
+
+.discounted-fee {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.discount-banner {
+  background-color: #f3a93e;
+  color: #420212;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
