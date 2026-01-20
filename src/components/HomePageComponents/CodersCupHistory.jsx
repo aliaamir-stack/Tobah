@@ -93,7 +93,7 @@ const CodersCupHistory = () => {
         ref={headingRef}
         className="integral-cf text-center text-5xl md:text-7xl font-bold py-6 px-2 mb-6 bg-gradient-to-b from-gray-400 to-gray-600 text-transparent bg-clip-text"
       >
-        <span className="integral-cf text-[#00A8FF]">Our</span> Vision
+        <span className="integral-cf text-[#F3A93E]">Our</span> Vision
       </h1>
 
       {/* Description */}
@@ -101,7 +101,7 @@ const CodersCupHistory = () => {
         ref={descRef}
         className="text-center text-lg md:text-xl mb-10 px-4 md:px-20"
       >
-To create a dynamic arena where passion meets excellence, uniting university students, local clubs, and sports enthusiasts. Our event celebrates athleticism, fosters teamwork, and strengthens bonds within and beyond institutions, inspiring the next generation of champions.
+To create a dynamic arena where passion meets excellence, uniting university students, and sports enthusiasts. Our event celebrates athleticism, fosters teamwork, and strengthens bonds within and beyond institutions, inspiring the next generation of champions.
       </p>
 
       {/* Image Slider */}
