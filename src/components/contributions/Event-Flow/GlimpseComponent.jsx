@@ -67,7 +67,7 @@ export default function GlimpseComponentlow() {
     <div ref={componentRef} className="my-16">
       <div className="flex justify-center px-2 sm:px-0 text-center items-center mb-8 md:mb-20 text-[34px] md:text-[41px] lg:text-[57px] xl:text-[70px] 2xl:text-7xl font-[700]">
         <h1 ref={titleRef} className="text-[#FFFFFF]">
-          <span className="text-[#00A8FF]">OLYMPIAD 2024 </span>
+          <span className="text-[#F3A93E]">OLYMPIAD 2025 </span>
           <span className="bg-gradient-to-b from-gray-400 to-gray-600 text-transparent bg-clip-text">GLIMPSE</span>
         </h1>
       </div>

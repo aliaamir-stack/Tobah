@@ -83,7 +83,7 @@ export default function EventFlowComponent() {
               <img className="max-w-[0.75rem] sm:max-w-[1.2rem] md:max-w-[1.4rem] lg:max-w-7 xl:max-w-8 2xl:max-w-[100%]" src="https://res.cloudinary.com/dm1xi8zff/image/upload/v1729964470/bar_efdtm7.png" alt="Bar" />
             </div>
             <div className="ml-3 mb-5 sm:mb-7 2xl:mt-0 lg:mb-0 xl:mt-5 lg:mt-9 flex flex-col justify-center xl:gap-0 2xl:gap-3 text-gray-900 w-[74%] sm:w-[60%] lg:w-[45%] xl:w-[40%] 2xl:w-[30%] text-[1.2rem] sm:text-[1.5rem] md:text-[1.76rem] lg:text-[2.3rem] xl:text-[2.5em] 2xl:text-[2.7rem]">
-              <h1 className="fira-code-heading font-[600]"><span className="whitespace-nowrap">10<sup>th</sup> January</span></h1>
+              <h1 className="fira-code-heading font-[600]"><span className="whitespace-nowrap">19<sup>th</sup> January</span></h1>
               <p className="lg:mb-0 mb-2">Registration Starts</p>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function EventFlowComponent() {
               <img className="max-w-[0.75rem] sm:max-w-[1.2rem] md:max-w-[1.4rem] lg:max-w-7 xl:max-w-8 2xl:max-w-[100%]" src="https://res.cloudinary.com/dm1xi8zff/image/upload/v1729964470/bar_efdtm7.png" alt="Bar" />
             </div>
             <div className="ml-3 mb-7 2xl:mt-0 lg:mb-0 xl:mt-5 lg:mt-9 flex flex-col justify-center xl:gap-0 2xl:gap-3 text-gray-900 w-[78%] sm:w-[60%] lg:w-[45%] xl:w-[40%] 2xl:w-[30%] text-[1.2rem] sm:text-[1.5rem] md:text-[1.76rem] lg:text-[2.3rem] xl:text-[2.5rem] 2xl:text-[2.7rem]">
-              <h1 className="fira-code-heading font-[600]"><span className="whitespace-nowrap">3<sup>rd</sup> February</span></h1>
+              <h1 className="fira-code-heading font-[600]"><span className="whitespace-nowrap">2<sup>d</sup> February</span></h1>
               <p className="lg:mb-0 mb-2">Event Starts & Opening Ceremony</p>
             </div>
           </div>

@@ -4,8 +4,8 @@ import { faPhone, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const developers = [
-  { name: "Ali Aamir Khan", linkedIn: "https://www.linkedin.com/in/owais-rafiq-639494253/"},
-  { name: "Fatimah Riaz", linkedIn: "https://www.linkedin.com/in/ahadaziz/"},
+  { name: "Ali Aamir Khan", linkedIn: "https://www.linkedin.com/in/ali-aamir-khan-36b00028a/"},
+  { name: "Fatimah Riaz", linkedIn: "https://www.linkedin.com/in/fatimah-riaz-3198992a7/"},
 ];
 
 const FooterComponent = () => {
