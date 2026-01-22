@@ -30,9 +30,12 @@ const TeamPage = () => {
 
         {/* Others */}
         <div className='flex gap-8 lg:gap-16 md:gap-8 flex-wrap justify-center'>
-          <PersonCard image="/team/shubair-hyder.png" name="Shubair Hyder" position="Esports Head" />
           <PersonCard image="/team/shayan-aamir.png" name="Shayan Aamir" position="DC Head Male" />
           <PersonCard image="/team/unaiza-rehman.png" name="Uniza Rehman" position="DC Head Female" />
+        </div>
+
+        <div className='flex gap-8 lg:gap-16 md:gap-8 flex-wrap justify-center'>
+          <PersonCard image="/team/shubair-hyder.png" name="Shubair Hyder" position="Esports Head" />
           <PersonCard image="/team/aimen-qureshi.png" name="Aimen Qureshi" position="Media and Promotions Head" />
         </div>
       </div>

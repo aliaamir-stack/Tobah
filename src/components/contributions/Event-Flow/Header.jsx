@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function Header() {
   const navigate = useNavigate();
   const headerRef = useRef(null);
-  const rightImg = "https://i.ibb.co/0MYbGtD/rb-55783.png"; // Use the image URL directly
+  const rightImg = "/eventflow.png"; // Use the image URL directly
 
   const handleDragStart = (event) => {
     event.preventDefault();
@@ -32,13 +32,12 @@ export default function Header() {
           </button>
         </div>
         <div className="2xl:w-[10%] xl:w-[15%] lg:w-[15%] md:w-[20%] sm:w-[10%]"></div>
-        <div className="2xl:w-[40%] xl:w-[35%] lg:w-[35%] md:w-[33%] sm:w-[40%] w-[75%] mb-3 sm:mb-0" style={{ userSelect: 'none' }}>
-          <img 
-            className="header-image"
-            src={rightImg} 
-            alt="header-image" 
-            style={{ userSelect: 'none' }} 
-            onDragStart={handleDragStart}
+        <div className="2xl:w-[60%] xl:w-[55%] lg:w-[55%] md:w-[50%] sm:w-[55%] w-[95%] mb-3 sm:mb-0">
+          <img
+            className="w-full max-w-[800px] xl:max-w-[900px] 2xl:max-w-[1100px] scale-125"
+            src={rightImg}
+            alt="Event Flow"
+            draggable={false}
           />
         </div>
       </div>
