@@ -4,10 +4,8 @@ import { faPhone, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const developers = [
-  { name: "Owais Rafiq", linkedIn: "https://www.linkedin.com/in/owais-rafiq-639494253/"},
-  { name: "Ahad Aziz", linkedIn: "https://www.linkedin.com/in/ahadaziz/"},
-  {name: "Hunain Imran", linkedIn: "https://www.linkedin.com/in/hunain-imran-0516642ab/"},
-  { name: "Sameer Ahmed", linkedIn: "https://www.linkedin.com/in/sameer-vers3/"},
+  { name: "Ali Aamir Khan", linkedIn: "https://www.linkedin.com/in/ali-aamir-khan-36b00028a/"},
+  { name: "Fatimah Riaz", linkedIn: "https://www.linkedin.com/in/fatimah-riaz-3198992a7/"},
 ];
 
 const FooterComponent = () => {
@@ -35,9 +33,6 @@ const FooterComponent = () => {
             <div className="mb-4">
               <h1 className="mb-2 text-lg font-bold uppercase text-[18px] md:text-[20px]">Follow Us</h1>
               <div className="flex space-x-4 mb-2 justify-center items-center">
-                {/* <a href="https://www.linkedin.com/company/acmnuceskhi" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn">
-                  <FontAwesomeIcon icon={faLinkedin} className="text-zinc-900 w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
-                </a> */}
                 <a href="https://www.facebook.com/sportics.nuceskhi/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
                   <FontAwesomeIcon icon={faFacebook} className="text-zinc-900 w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
                 </a>
@@ -84,7 +79,7 @@ const FooterComponent = () => {
 
             <h1 className="my-2 mt-4 text-lg font-bold uppercase text-[18px] md:text-[20px]">REPOSITORY</h1>
             <a
-              href="https://github.com/ahadazizjaffer2/olympiad25-sportics"
+              href="https://github.com/aliaamir-stack/sportics-website"
               className="flex overflow-hidden items-center text-sm font-medium bg-black focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50  text-white shadow hover:bg-black/90 h-9 px-4 py-2 max-w-52 whitespace-pre md:flex group relative w-full justify-center gap-2 rounded-md transition-all duration-300 ease-out hover:ring-2 hover:ring-black hover:ring-offset-2"
               target="_blank"
               rel="noopener noreferrer"

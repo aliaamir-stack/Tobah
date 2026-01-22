@@ -19,7 +19,7 @@ const contactData = [
     phone: '03342063891'
   },
   {
-    name: 'Fatima Riaz',
+    name: 'Fatimah Riaz',
     role: 'General Secretary',
     phone: '+92 310 2022663'
   }

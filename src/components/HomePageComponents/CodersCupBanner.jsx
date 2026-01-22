@@ -36,15 +36,15 @@ const CodersCupBanner = () => {
       className="w-4/5 max-w-full h-full rounded-2xl border border-black text-center mx-auto m-16 p-6 bg-white"
     >
       <div>
-        <span className="bricks text-[#00A8FF] text-[12vw] md:text-[10vw] font-bold break-words">
+        <span className="bricks text-[#F3A93E] text-[12vw] md:text-[10vw] font-bold break-words">
           OLYMPIAD
         </span>
         <span className="bricks bg-gradient-to-b from-gray-400 to-gray-600 text-transparent bg-clip-text text-[12vw] md:text-[10vw] font-bold break-words mb-6">
-          {' '}2025
+          {' '}2026
         </span>
       </div>
       <div className="text-gray-600 text-[3vw] font-light break-words mb-4">
-      Compete, Lead, Triumph
+      Conquer The Field
       </div>
     </div>
   );
