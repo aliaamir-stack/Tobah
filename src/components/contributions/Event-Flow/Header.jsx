@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function Header() {
   const navigate = useNavigate();
   const headerRef = useRef(null);
-  const rightImg = "/eventflow.png"; // Use the image URL directly
+  const rightImg = "/eventflow.png";
 
   const handleDragStart = (event) => {
     event.preventDefault();
@@ -18,14 +18,16 @@ export default function Header() {
     <div ref={headerRef} className="mt-32 z-10">
       <div className="flex flex-col-reverse sm:flex-row items-center text-white mx-auto w-[85%]">
         <div className="sm:w-[50%] md:w-[47%] sm:border-l-4 border-white sm:px-3 pt-6 text-center sm:text-start">
-          <p className="integral-cf title uppercase text-[40px] 2xl:text-[120px] font-bold mb-3 sm:mb-2 xl:mb-3 xl:text-[55px] lg:text-[40px] md:text-[28px] sm:text-[25px] bg-gradient-to-b from-gray-400 to-gray-600 text-transparent bg-clip-text">
-            JOIN US
-          </p>
+          <h1
+            className="integral-cf text-left text-3xl md:text-7xl font-bold py-6 px-2 mb-6 bg-gradient-to-b from-gray-400 to-gray-600 text-transparent bg-clip-text"
+          >
+            <span className="integral-cf text-golden">JOIN</span> US
+          </h1>
           <p className="subtitle md:mt-1 sm:mt-1 uppercase text-[14px] 2xl:text-2xl xl:text-[17px] lg:text-[14px] md:text-[12px] sm:text-[11px] text-gray-600">
             {"DON'T MISS OUT ON THE EXCITEMENT! SIGN UP NOW TO RESERVE YOUR PLACE AT THIS AMAZING EVENT!"}
           </p>
           <button
-            className="register-button bg-[#ff6f00] 2xl:px-6 2xl:py-3 2xl:text-4xl xl:py-3 xl:px-4 lg:py-2 lg:px-4 py-2 px-4 font-bold lg:mt-5 2xl:mt-7 sm:mt-2 mt-4 rounded-md hover:bg-[#33618a] transition duration-100 xl:text-[22px] lg:text-[16px] md:text-[12px] sm:text-[12px] text-[20px]"
+            className="register-button bg-[#F3A93E] 2xl:px-6 2xl:py-3 2xl:text-4xl xl:py-3 xl:px-4 lg:py-2 lg:px-4 py-2 px-4 font-bold lg:mt-5 2xl:mt-7 sm:mt-2 mt-4 rounded-md hover:bg-[#be8637] transition duration-100 xl:text-[22px] lg:text-[16px] md:text-[12px] sm:text-[12px] text-[20px]"
             onClick={handleRegisterClick}
           >
             Register Now

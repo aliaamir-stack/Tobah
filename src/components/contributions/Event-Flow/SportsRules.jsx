@@ -593,7 +593,7 @@ function SportRules() {
                 key={sport.name}
                 className={`w-full px-4 py-3 text-left transition-colors duration-300 text-xl ${
                   activeSport === sport.name
-                    ? 'bg-[#00A8FF] text-[#FFF]'
+                    ? 'bg-[#F3A93E] text-[#FFF]'
                     : 'text-[#000] hover:bg-gray-300'
                 }`}
                 onClick={() => setActiveSport(sport.name)}
@@ -630,7 +630,7 @@ function SportRules() {
                   key={sport.name}
                   className={`px-4 py-2 whitespace-nowrap transition-colors duration-300 ${
                     activeSport === sport.name
-                      ? 'bg-[#00A8FF] text-[#FFF]'
+                      ? 'bg-[#F3A93E] text-[#FFF]'
                       : 'text-[#000] hover:bg-gray-200'
                   }`}
                   onClick={() => setActiveSport(sport.name)}
@@ -646,7 +646,7 @@ function SportRules() {
             {sports.map((sport) => (
               sport.name === activeSport && (
                 <div key={sport.name}>
-                  <h3 className="text-2xl mb-4 text-[#00A8FF] ">{sport.name} Rules</h3>
+                  <h3 className="text-2xl mb-4 text-[#F3A93E] ">{sport.name} Rules</h3>
                   <ul className="space-y-4">
                     {sport.rules.map((rule, index) => (
                       <li key={index} className="text-sm sm:text-base text-[12px] sm:text-[12px] md:text-[14px] xl:text-[16px] 2xl:text-[18px]">

@@ -6,20 +6,19 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 const images = [
-  "https://i.ibb.co/jJt9Qk3/12.png",
-  "https://i.ibb.co/BNG3gPb/13.png",
-  "https://i.ibb.co/3fYQtc2/14.png",
-  "https://i.ibb.co/WB4V49W/2.png",
-  "https://i.ibb.co/6FRBBKs/1.png",
-  "https://i.ibb.co/Bftmqk2/3.png",
-  "https://i.ibb.co/j4363S6/4.png",
-  "https://i.ibb.co/94h431K/5.png",
-  "https://i.ibb.co/SRdyLym/6.png",
-  "https://i.ibb.co/FY3NC4C/7.png", 
-  "https://i.ibb.co/FskVQFY/8.png",
-  "https://i.ibb.co/8NmZfH0/9.png",
-  "https://i.ibb.co/QrG5yPT/10.png",
-  "https://i.ibb.co/YPp1nzS/11.png"
+  "https://i.ibb.co/Zz6mvmY1/1.png",
+  "https://i.ibb.co/h12VQ7Nf/12.png",
+  "https://i.ibb.co/Cp0JNrD7/2.png",
+  "https://i.ibb.co/qLWhZjD5/3.png",
+  "https://i.ibb.co/chmf4RV3/4.png",
+  "https://i.ibb.co/F4q8jbbR/Untitled-design-34.png",
+  "https://i.ibb.co/BV65PnL2/10.png",
+  "https://i.ibb.co/pv7rrNt9/11.png",
+  "https://i.ibb.co/HDY1B2rJ/13.png",
+  "https://i.ibb.co/3ndM4xr/15.png",
+  "https://i.ibb.co/zVWdw9DV/17.png",
+  "https://i.ibb.co/1tg2B42H/16.png",
+  "https://i.ibb.co/tTW8LvWk/14.png",
 ];
 
 
@@ -67,7 +66,7 @@ export default function GlimpseComponentlow() {
     <div ref={componentRef} className="my-16">
       <div className="flex justify-center px-2 sm:px-0 text-center items-center mb-8 md:mb-20 text-[34px] md:text-[41px] lg:text-[57px] xl:text-[70px] 2xl:text-7xl font-[700]">
         <h1 ref={titleRef} className="text-[#FFFFFF]">
-          <span className="text-[#F3A93E]">OLYMPIAD 2025 </span>
+          <span className="text-[#F3A93E]">SPORTICS 2025 </span>
           <span className="bg-gradient-to-b from-gray-400 to-gray-600 text-transparent bg-clip-text">GLIMPSE</span>
         </h1>
       </div>
