@@ -10,20 +10,19 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Store images in an array
 const eventImages = [
-  "https://i.ibb.co/jJt9Qk3/12.png",
-  "https://i.ibb.co/BNG3gPb/13.png",
-  "https://i.ibb.co/3fYQtc2/14.png",
-  "https://i.ibb.co/WB4V49W/2.png",
-  "https://i.ibb.co/6FRBBKs/1.png",
-  "https://i.ibb.co/Bftmqk2/3.png",
-  "https://i.ibb.co/j4363S6/4.png",
-  "https://i.ibb.co/94h431K/5.png",
-  "https://i.ibb.co/SRdyLym/6.png",
-  "https://i.ibb.co/FY3NC4C/7.png", 
-  "https://i.ibb.co/FskVQFY/8.png",
-  "https://i.ibb.co/8NmZfH0/9.png",
-  "https://i.ibb.co/QrG5yPT/10.png",
-  "https://i.ibb.co/YPp1nzS/11.png"
+  "https://i.ibb.co/Zz6mvmY1/1.png",
+  "https://i.ibb.co/h12VQ7Nf/12.png",
+  "https://i.ibb.co/Cp0JNrD7/2.png",
+  "https://i.ibb.co/qLWhZjD5/3.png",
+  "https://i.ibb.co/chmf4RV3/4.png",
+  "https://i.ibb.co/F4q8jbbR/Untitled-design-34.png",
+  "https://i.ibb.co/BV65PnL2/10.png",
+  "https://i.ibb.co/pv7rrNt9/11.png",
+  "https://i.ibb.co/HDY1B2rJ/13.png",
+  "https://i.ibb.co/3ndM4xr/15.png",
+  "https://i.ibb.co/zVWdw9DV/17.png",
+  "https://i.ibb.co/1tg2B42H/16.png",
+  "https://i.ibb.co/tTW8LvWk/14.png"
 ];
 
 const CodersCupHistory = () => {
