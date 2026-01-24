@@ -50,12 +50,17 @@ body {
 }
 
 .image-gallery-icon:hover {
-  color: #00A8FF;
+  color: #F3A93E;
 }
 
 .image-gallery-icon {
   color: white;
 }
+
+.tw-gallery .image-gallery-image {
+  @apply scale-75 transform;
+}
+
 
 
 
@@ -96,7 +101,7 @@ body {
 }
 
 .buttons button.active {
-  background: #00A8FF;
+  background: #F3A93E;
   color: #f9f9f9;
 }
 

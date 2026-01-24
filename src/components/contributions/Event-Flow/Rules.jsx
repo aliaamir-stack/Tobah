@@ -88,7 +88,7 @@ export default function Rules() {
       <div className="text-gray-600 text-center sm:mb-0 md:mb-0 lg:mb-0  sm:mt-0 mt-8">
         <h1 ref={titleRef} className="font-[700] text-[34px] 2xl:text-[70px] xl:text-[66px] lg:text-[55px] md:text-[40px] sm:text-[30px]">
           <span className="integral-cf bg-gradient-to-b from-gray-400 to-gray-600 text-transparent bg-clip-text">
-            SOPs and Regulations
+            <span className="integral-cf text-golden">SOPs</span> and Regulations
           </span>
         </h1>
       </div>

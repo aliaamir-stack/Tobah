@@ -1,5 +1,4 @@
 import React from 'react';
-import TitleSponsor from "./TitleSponsor.jsx";
 import PremiumSponsor from './PremiumSponsor.jsx';
 
 const SponsorComp = () => {
