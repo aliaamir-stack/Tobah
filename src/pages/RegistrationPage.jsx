@@ -19,11 +19,20 @@ const RegistrationPage = () => {
         {/* Sports */}
         <div className="bg-white border border-gray-200 rounded-xl p-5 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#F3A93E] border-b-[3px] border-b-transparent">
           <h2 className="text-2xl font-bold mb-4">Sports</h2>
-          <button
+          {/*<button
             className="text-white text-lg bg-maroon border border-white rounded-md px-8 py-3 hover:bg-golden hover:text-maroon transition-all transform hover:scale-105 active:scale-95 font-semibold"            onClick={() => setSelectedCategory('sports')}
           >
             Register
+          </button>*/}
+
+          <button
+            className="text-white text-lg bg-maroon border border-white rounded-md px-8 py-3 hover:bg-golden hover:text-maroon transition-all transform hover:scale-105 active:scale-95 font-semibold"            onClick={() =>
+              handleExternalRegister('https://docs.google.com/forms/d/e/1FAIpQLSdYGs4bzyyVMCp__UlZhMIwSlnhakqxkfxB6w7YK93AiY5GXw/formResponse')
+            }
+          >
+            Register
           </button>
+
         </div>
 
         {/* Esports */}
@@ -43,7 +52,7 @@ const RegistrationPage = () => {
           <h2 className="text-2xl font-bold mb-4">Padel</h2>
           <button
             className="text-white text-lg bg-maroon border border-white rounded-md px-8 py-3 hover:bg-golden hover:text-maroon transition-all transform hover:scale-105 active:scale-95 font-semibold"            onClick={() =>
-              handleExternalRegister('https://forms.gle/PADEL_GOOGLE_FORM_LINK')
+              handleExternalRegister('https://forms.gle/zbmWMnnJAXh6HqGc6')
             }
           >
             Register

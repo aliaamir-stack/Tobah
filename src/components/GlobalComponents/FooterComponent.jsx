@@ -45,9 +45,9 @@ const FooterComponent = () => {
             <div className="flex flex-col justify-center items-center gap-y-1">
               <h1 className="mb-2 text-lg font-bold uppercase text-[18px] md:text-[20px]">Contact Us</h1>
               <p className="flex items-center text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] font-normal">
-                <a href="https://wa.me/+923151173672" className="flex items-center text-gray-900 mb-4" aria-label="Call us at (+92) 315-1173672">
-                  <FontAwesomeIcon icon={faPhone} className="mr-2" /> (+92) 315-1173672
-                </a>
+                <p className="flex items-center text-gray-900 mb-4" aria-label="Call us at (+92) 324 2050881, Faculty Head">
+                  <FontAwesomeIcon icon={faPhone} className="mr-2" /> (+92) 324 2050881
+                </p>
               </p>
               <p className="flex items-center text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] font-normal">
                 {/* <a href="https://www.acmnuceskhi.com" className="flex items-center text-gray-900" aria-label="Visit acmnuceskhi.com">
