@@ -1,64 +1,50 @@
 import React, { useState } from 'react'
-import EnhancedMultiStepForm from '../components/Register-Now/MultiStepForm'
+import CategoryRegistrationForm from '../components/Register-Now/CategoryRegistrationForm'
+
+const CARDS = [
+  { key: 'sports', title: 'Sports', icon: '🏆', desc: 'Futsal, Cricket, Basketball, Volleyball & more' },
+  { key: 'esports', title: 'Esports', icon: '🎮', desc: 'PUBG, CS2, Valorant, Tekken & FIFA' },
+  { key: 'padel', title: 'Padel', icon: '🎾', desc: 'Padel Doubles' },
+]
 
 const RegistrationPage = () => {
   const [selectedCategory, setSelectedCategory] = useState(null)
 
-  const handleExternalRegister = (url) => {
-    window.location.href = url
-  }
-
-  if (selectedCategory === 'sports') {
-    return <EnhancedMultiStepForm />
+  if (selectedCategory) {
+    return (
+      <CategoryRegistrationForm
+        category={selectedCategory}
+        onBack={() => setSelectedCategory(null)}
+      />
+    )
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-16">
+      <h1 className="text-3xl sm:text-4xl font-bold text-[#6B0F1A] mb-2 text-center">Register Now</h1>
+      <p className="text-gray-500 mb-10 text-center">Choose your category to begin registration</p>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl w-full">
-
-        {/* Sports */}
-        <div className="bg-white border border-gray-200 rounded-xl p-5 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#F3A93E] border-b-[3px] border-b-transparent">
-          <h2 className="text-2xl font-bold mb-4">Sports</h2>
-          {/*<button
-            className="text-white text-lg bg-maroon border border-white rounded-md px-8 py-3 hover:bg-golden hover:text-maroon transition-all transform hover:scale-105 active:scale-95 font-semibold"            onClick={() => setSelectedCategory('sports')}
+        {CARDS.map((card) => (
+          <div
+            key={card.key}
+            className="bg-white border border-gray-200 rounded-xl p-8 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#F5A623] group cursor-pointer"
+            onClick={() => setSelectedCategory(card.key)}
           >
-            Register
-          </button>*/}
-
-          <button
-            className="text-white text-lg bg-maroon border border-white rounded-md px-8 py-3 hover:bg-golden hover:text-maroon transition-all transform hover:scale-105 active:scale-95 font-semibold"            onClick={() =>
-              handleExternalRegister('https://docs.google.com/forms/d/e/1FAIpQLSdYGs4bzyyVMCp__UlZhMIwSlnhakqxkfxB6w7YK93AiY5GXw/formResponse')
-            }
-          >
-            Register
-          </button>
-
-        </div>
-
-        {/* Esports */}
-        <div className="bg-white border border-gray-200 rounded-xl p-5 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#F3A93E] border-b-[3px] border-b-transparent">
-          <h2 className="text-2xl font-bold mb-4">Esports</h2>
-          <button
-            className="text-white text-lg bg-maroon border border-white rounded-md px-8 py-3 hover:bg-golden hover:text-maroon transition-all transform hover:scale-105 active:scale-95 font-semibold"            onClick={() =>
-              handleExternalRegister('https://docs.google.com/forms/d/e/1FAIpQLSeBoe2583RglYclNCVwynwQaESGWrdikeQ0rF4vkEeZlIdIGQ/viewform?usp=header')
-            }
-          >
-            Register
-          </button>
-        </div>
-
-        {/* Padel */}
-        <div className="bg-white border border-gray-200 rounded-xl p-5 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#F3A93E] border-b-[3px] border-b-transparent">
-          <h2 className="text-2xl font-bold mb-4">Padel</h2>
-          <button
-            className="text-white text-lg bg-maroon border border-white rounded-md px-8 py-3 hover:bg-golden hover:text-maroon transition-all transform hover:scale-105 active:scale-95 font-semibold"            onClick={() =>
-              handleExternalRegister('https://forms.gle/zbmWMnnJAXh6HqGc6')
-            }
-          >
-            Register
-          </button>
-        </div>
-
+            <div className="text-5xl mb-4">{card.icon}</div>
+            <h2 className="text-2xl font-bold mb-2 text-gray-800 group-hover:text-[#6B0F1A] transition-colors">{card.title}</h2>
+            <p className="text-sm text-gray-500 mb-5">{card.desc}</p>
+            <button
+              className="text-white text-lg bg-[#6B0F1A] border border-transparent rounded-md px-8 py-3 hover:bg-[#F5A623] hover:text-[#6B0F1A] transition-all transform hover:scale-105 active:scale-95 font-semibold"
+              onClick={(e) => {
+                e.stopPropagation()
+                setSelectedCategory(card.key)
+              }}
+            >
+              Register
+            </button>
+          </div>
+        ))}
       </div>
     </div>
   )

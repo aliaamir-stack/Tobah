@@ -51,7 +51,7 @@ export default function AboutCodersCup() {
 
             <div className="sporting-grotesque flex flex-col lg:flex-row gap-8 justify-center items-center px-4 py-8">
                 <p className="text-gray-700 w-full lg:w-6/12 text-center md:text-left">
-                    FAST Olympiad 2026 is the annual flagship sports event hosted by FAST University, bringing together athletes and enthusiasts from universities across Karachi. This exciting five-day event, happening from February 2nd to February 6th, 2026, is a dynamic showcase of outdoor sports, indoor games, and e-sports.
+                    FAST Olympiad 2026 is the annual flagship sports event hosted by FAST University, bringing together athletes and enthusiasts from universities across Karachi. This exciting five-day event, happening from April 20th to April 24th, 2026, is a dynamic showcase of outdoor sports, indoor games, and e-sports.
                     <br /><br />
                     With a wide range of competitions, participants have the chance to demonstrate their skills, teamwork, and passion for sports. More than just a competition, FAST Olympiad celebrates the spirit of unity, excellence, and the vibrant energy of youth.
                     <br /><br />

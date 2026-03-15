@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 const RegistrationCountdown = () => {
   const [timeRemaining, setTimeRemaining] = useState(0);
 
-  // Target date: 1st February 2026, at 23:59 in Pakistan Standard Time
-  const targetDate = new Date('2026-02-01T23:59:00+05:00'); // PST (UTC+5)
+  // Target date: 16th April 2026, at 23:59 in Pakistan Standard Time
+  const targetDate = new Date('2026-04-16T23:59:00+05:00'); // PST (UTC+5)
 
   useEffect(() => {
     const countdownInterval = setInterval(() => {
