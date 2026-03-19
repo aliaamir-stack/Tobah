@@ -6,8 +6,8 @@ import { CATEGORIES } from './registrationConfig';
 
 const STEP_LABELS = ['Select Sport', 'Team Type', 'Team Info', 'Players', 'Review & Submit'];
 
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyIn4pUDH-b1aXhg59cbgbNoATQkVMx6vPIA-wz3Gl_863akehkoG3sx7GWsGyN0fCEkg/exec';
-
+const GOOGLE_SCRIPT_URL =
+  'https://script.google.com/macros/s/AKfycbylXIACRblPum69wQZLD65pGr-YdY2gnyAgb5D-JSWp7M-71xfoLNTVLQc6xtQdPFp6WQ/exec';
 /* ─── helpers ─── */
 const empty = (v) => !v || !v.trim();
 
@@ -51,8 +51,8 @@ export default function CategoryRegistrationForm({ category, onBack }) {
         sc.labels && sc.labels[i]
           ? sc.labels[i]
           : sc.captainOnly && sc.mandatory === 1
-          ? 'Player (Captain)'
-          : `Player ${i + 1}`;
+            ? 'Player (Captain)'
+            : `Player ${i + 1}`;
       arr.push({ label, name: '', cnic: '', phone: '', isSub: false });
     }
     setPlayers(arr);
@@ -241,9 +241,8 @@ export default function CategoryRegistrationForm({ category, onBack }) {
                   {done ? <TiTick className="text-white text-lg" /> : stepNum}
                 </div>
                 <span
-                  className={`mt-2 text-xs text-center w-16 leading-tight ${
-                    done || active ? 'text-[#6B0F1A] font-semibold' : 'text-gray-400'
-                  }`}
+                  className={`mt-2 text-xs text-center w-16 leading-tight ${done || active ? 'text-[#6B0F1A] font-semibold' : 'text-gray-400'
+                    }`}
                 >
                   {label}
                 </span>
@@ -347,11 +346,10 @@ export default function CategoryRegistrationForm({ category, onBack }) {
                   ].map((opt) => (
                     <label
                       key={opt.val}
-                      className={`flex items-start gap-3 p-4 rounded-lg border-2 cursor-pointer transition-all ${
-                        teamType === opt.val
+                      className={`flex items-start gap-3 p-4 rounded-lg border-2 cursor-pointer transition-all ${teamType === opt.val
                           ? 'border-[#6B0F1A] bg-[#fef0f2]'
                           : 'border-gray-200 hover:border-gray-300'
-                      }`}
+                        }`}
                     >
                       <input
                         type="radio"
@@ -417,9 +415,8 @@ export default function CategoryRegistrationForm({ category, onBack }) {
                   {players.map((p, idx) => (
                     <div
                       key={idx}
-                      className={`p-4 rounded-lg border ${
-                        p.isSub ? 'border-dashed border-[#F5A623] bg-[#fffdf6]' : 'border-gray-200 bg-gray-50'
-                      }`}
+                      className={`p-4 rounded-lg border ${p.isSub ? 'border-dashed border-[#F5A623] bg-[#fffdf6]' : 'border-gray-200 bg-gray-50'
+                        }`}
                     >
                       <div className="flex justify-between items-center mb-3">
                         <span className="text-sm font-semibold text-[#6B0F1A]">
@@ -555,11 +552,10 @@ export default function CategoryRegistrationForm({ category, onBack }) {
               whileTap={{ scale: submitting ? 1 : 0.96 }}
               onClick={step === STEP_LABELS.length ? handleSubmit : next}
               disabled={submitting}
-              className={`px-6 py-2.5 rounded-full text-white font-semibold min-w-[130px] transition disabled:opacity-60 ${
-                step === STEP_LABELS.length
+              className={`px-6 py-2.5 rounded-full text-white font-semibold min-w-[130px] transition disabled:opacity-60 ${step === STEP_LABELS.length
                   ? 'bg-[#6B0F1A] hover:bg-[#8a1422]'
                   : 'bg-[#F5A623] hover:bg-[#e0951c]'
-              } ${step === 1 ? 'ml-auto' : ''}`}
+                } ${step === 1 ? 'ml-auto' : ''}`}
             >
               {step === STEP_LABELS.length ? (
                 submitting ? (
